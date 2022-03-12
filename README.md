@@ -17,3 +17,6 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## App Link
+See [Link](https://muso-ninjas-2a663.firebaseapp.com/)
