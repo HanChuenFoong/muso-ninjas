@@ -1,26 +1,21 @@
-import firebase from 'firebase/app'
-import 'firebase/firestore'
-import 'firebase/auth'
-import 'firebase/storage'
+import { initializeApp } from 'firebase/app'
+import { getFirestore } from 'firebase/firestore'
+import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDf_aBBPlojPeSE4_TJYlD6O-2bB6oeQBA",
-    authDomain: "muso-ninjas-2a663.firebaseapp.com",
-    projectId: "muso-ninjas-2a663",
-    storageBucket: "muso-ninjas-2a663.appspot.com",
-    messagingSenderId: "617762071742",
-    appId: "1:617762071742:web:42ff8aebd60830c4162aef"
+    apiKey: "AIzaSyCcSHnQTxRgasduD1LUwHBQbendExqyF1A",
+    authDomain: "fb9-reading-list-c64f2.firebaseapp.com",
+    projectId: "fb9-reading-list-c64f2",
+    storageBucket: "fb9-reading-list-c64f2.appspot.com",
+    messagingSenderId: "942007464692",
+    appId: "1:942007464692:web:953c7c8b838f2a501ce4a1"
 };
 
 // init firebase
-firebase.initializeApp(firebaseConfig)
+initializeApp(firebaseConfig)
 
 // init services
-const projectFirestore = firebase.firestore()
-const projectAuth = firebase.auth()
-const projectStorage = firebase.storage()
+const db = getFirestore()
+const auth = getAuth()
 
-// timestamp
-const timestamp = firebase.firestore.FieldValue.serverTimestamp
-
-export { projectFirestore, projectAuth, projectStorage, timestamp }
+export { db, auth }

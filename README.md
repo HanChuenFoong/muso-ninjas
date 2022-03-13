@@ -1,4 +1,4 @@
-# muso-ninjas
+# reading-list
 
 ## Project setup
 ```
@@ -15,8 +15,10 @@ npm run serve
 npm run build
 ```
 
+### Lints and fixes files
+```
+npm run lint
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-## App Link
-See [Link](https://muso-ninjas-2a663.firebaseapp.com/)
